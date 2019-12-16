@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="utf-8">
+    <head>
+        <title>武当理工大学 test</title>
+        <link rel="icon" type="image/x-icon" href="img/wd.ico" />
+        <link href="css/base-test.css" rel="stylesheet">
+    </head>
+    <body onload="startTime()">
+        <header>
+            <span class="photo" id="logo"><a id="nav" href="index.html"><img src="img/Logo_white_40.png"></a></span>
+            <span class="title" id="academy"><a id="nav" href="index.html">网站首页</a></span>
+            <span class="title" id="teacher"><a id="nav" href="article/003.html">学校概况</a></span>
+            <span class="title" id="edu"><a id="nav" href="article/004.html">院部设置</a></span>
+            <span class="title" id="job"><a id="nav" href="article/005.html">师资队伍</a></span>
+            <span class="title" id="culture"><a id="nav" href="article/006.html">教学科研</a></span>
+            <span class="title" id="study"><a id="nav" href="article/007.html">招生就业</a></span>
+            <span class="title" id="about"><a id="nav" href="article/008.html">校园文化</a></span>
+            <span class="title" id="about"><a id="nav" href="edu.html">教务系统</a></span>
+        </header>
+        
+        <!--第一行区块-->
+        <div id="container">
+            <!--广告轮播区块-->
+            <div id="block0"> 
+                <div id="pbFrame1" >
+                    <div id="photoBlock1" class="pbPlay1">
+                        <!--毕业晚会-->
+                        <a href="article/002.html"><img src="img/ad-02.png" ></a>
+                        <!--一起过六一-->
+                        <a href="article/001.html"><img src="img/ad-01.png" ></a>     
+                        <!--春游活动-->
+                        <a href="article/003.html"><img src="img/ad-03.png" ></a>
+                    </div>
+                </div>
+            </div>
+            <!--教务系统区块-->
+            <div id="block1">
+                <div id="pbFrame2">
+                    <div id="photoBlock2" class="pbPlay2">
+                        <!--教务系统-->
+                        <a href="edu.html"><img src="img/block-01.png"></a>
+                        <!--邮件系统-->
+                        <a href="email.html"><img src="img/block-02.png"></a>
+                        <!--新生报到-->
+                        <a href="edu.html"><img src="img/block-03.png"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--第二行区块-->
+        <div id="container">
+                <!--新生报到区块-->
+                <div id="block2">
+                    <div id="pbFrame3">
+                        <div id="photoBlock3" class="pbPlay3">
+                             <!--邮件查询-->
+                            <a href="email.html"><img src="img/block-04.png"></a> 
+                            <!--成绩查询-->
+                            <a href="edu.html"><img src="img/block-05.png"></a>                                                    
+                        </div>
+                    </div>
+                </div>
+
+            <!--媒体新闻区块-->         
+            <div id="productShow">
+                    <div id="icon"></div>
+                    <div id="newsRightSpace"></div>   
+                    <ul>
+                        <li class="news"><a id="news" href="article/009.html">[2019-6-12]  武当理工大学 校徽设计</a></li>
+                    <div id="listSpace"></div>
+                        <li class="news"><a id="news" href="article/001.html">[2019-6-09]  "一起过六一" 武当理工大学 六一系列活动</a></li>
+                    <div id="listSpace"></div>
+                        <li class="news"><a id="news" href="article/002.html">[2019-5-31]  "无造作 不青春" 武当理工大学2019届学生毕业晚会</a></li>
+                    <div id="listSpace"></div>
+                        <li class="news"><a id="news" href="article/010.html">[2019-4-21]  武当理工大学2019届学生毕业晚会节目筹备计划</a></li>
+                    <div id="listSpace"></div>
+                        <li class="news"><a id="news" href="video.html">[2019-4-14]  教务系统-视频测试</a>
+                    <div id="listSpace"></div>
+                        </li><li class="news"></li><a id="news" href="article/011.html">[2019-4-17]  手绘时钟-相片相框测试</a></li>
+                    </ul>
+            </div>
+
+            <!--我有话说区块-->
+            <div id="block3">
+                <!--留言板-->
+                <a href="message.html"><img src="img/block-06.png"></a>
+            </div>
+        </div>
+        
+        <!--小提示区块-->
+        <div id="container">
+        <div id="tips">
+            <div id="tipsShortSpace"></div>
+        	<span id="time"></span>
+            <div id="tipsSpace">
+                <audio src="audio/test.mp3" controls></audio>
+            </div>
+        <iframe name="weather_inc" src="http://i.tianqi.com/index.php?c=code&id=99" width="120" height="31" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe></div>
+        
+		</div>
+        <!--第三行区块-->
+        <div id="container">
+        <div id="bottom"></div>
+        </div>
+       <script>
+	   		function startTime()   
+            {   
+                var today=new Date();//定义日期对象   
+                var yyyy = today.getFullYear();//通过日期对象的getFullYear()方法返回年    
+                var MM = today.getMonth()+1;//通过日期对象的getMonth()方法返回年    
+                var dd = today.getDate();//通过日期对象的getDate()方法返回年     
+                var hh=today.getHours();//通过日期对象的getHours方法返回小时   
+                var mm=today.getMinutes();//通过日期对象的getMinutes方法返回分钟   
+                var ss=today.getSeconds();//通过日期对象的getSeconds方法返回秒   
+                // 如果分钟或小时的值小于10，则在其值前加0，比如如果时间是下午3点20分9秒的话，则显示15：20：09   
+                MM=checkTime(MM);
+                dd=checkTime(dd);
+                mm=checkTime(mm);   
+                ss=checkTime(ss);    
+                var day; //用于保存星期（getDay()方法得到星期编号）
+                if(today.getDay()==0)   day   =   "星期日 " 
+                if(today.getDay()==1)   day   =   "星期一 " 
+                if(today.getDay()==2)   day   =   "星期二 " 
+                if(today.getDay()==3)   day   =   "星期三 " 
+                if(today.getDay()==4)   day   =   "星期四 " 
+                if(today.getDay()==5)   day   =   "星期五 " 
+                if(today.getDay()==6)   day   =   "星期六 " 
+                document.getElementById('time').innerHTML="  当前时间: "+yyyy+"年"+MM +"月"+ dd +"日  "+ hh+":"+mm+":"+ss+"   " + day;   
+                setTimeout('startTime()',1000); //每一秒中重新加载startTime()方法 
+            }   
+             
+            function checkTime(i)   
+            {   
+                if (i<10){
+                    i="0" + i;
+                }   
+                  return i;
+            } 
+
+	   </script>
+    </body>
+</html>
