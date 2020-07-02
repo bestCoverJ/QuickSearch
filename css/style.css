@@ -1,0 +1,116 @@
+/*
+    首页样式
+*/
+
+body{
+	font-family: "Segoe UI", "Lucida Grande"," Helvetica","Arial", 
+	"Microsoft YaHei", "FreeSans","Arimo", "Droid Sans","wenquanyi micro hei",
+	"Hiragino Sans GB", "Hiragino Sans GB W3", "Arial", "sans-serif";
+}
+
+#logo{
+    color:white;
+    text-align: center;
+  }
+  
+  .nav-left{
+    text-align:left;
+    position: absolute;
+    top:2%;
+    left: 7%;
+  }
+  
+  .nav-right{
+    text-align:right;
+    position: absolute;
+    top:2%;
+    right: 7%;
+  }
+  
+  .body{	
+      position:absolute;
+      top: 25%;
+      width: 100%;
+      text-align: center;
+      line-height: 0em;
+  }
+
+  body {
+	margin: 0;
+	width: 100%;
+	height: 100vh;
+	font-family: "Exo", sans-serif;
+	color: #fff;
+	background: linear-gradient( 135deg, #72EDF2 10%, #5151E5 100%);
+	background-size: 400% 400%;
+	animation: gradientBG 15s ease infinite;
+}
+
+@keyframes gradientBG {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+  
+  .nav-block{
+      width: 5%;
+      float: left;
+  }
+  
+  ul li{
+      display:inline;
+      padding:20px;
+  }
+  
+  a{
+      font-size:30px;
+      color: white;
+      text-decoration: none;
+  }
+  
+  a:link {color:white;}		/* 未被访问的链接 */
+  a:visited {color:white;}	/* 已被访问的链接 */
+  a:hover {color:#E8E8E8;}	/* 鼠标指针移动到链接上 */
+  a:active {color:white;}	/* 正在被点击的链接 */
+  
+  .tips{
+    text-align:center;
+    position: absolute;
+    bottom: 5%;
+    width: 100%;
+  }
+  
+  .container{
+      width: 100%;
+      overflow: auto;
+  }
+
+  .search{
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 30px;
+      width: 35%;
+  }
+
+  .log{
+    min-height: 35vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
+
+  #log{
+      text-align: center;
+  }
+
+  .nav{
+      margin-top: 20px;
+      text-align: center;
+  }
